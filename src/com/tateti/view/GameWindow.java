@@ -21,7 +21,7 @@ public class GameWindow extends JFrame {
     }
 
     private void InitializeBoard(){
-        // This method created a JPanel and sets a 3x3 GridLayout on it
+        // This method creates a JPanel and sets a 3x3 GridLayout on it
         // Each grid contains a button
         JPanel gamePanel = new JPanel(); // Main panel
         gamePanel.setLayout(new GridLayout(3, 3)); // Sets a grid layout 3x3 for main panel

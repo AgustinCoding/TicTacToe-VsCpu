@@ -3,6 +3,8 @@ package com.tateti.controller;
 import com.tateti.model.Bot;
 import com.tateti.model.Game;
 import com.tateti.view.GameWindow;
+import com.tateti.view.LoginView;
+import com.tateti.view.RegisterView;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,6 +14,11 @@ import java.util.Arrays;
 // Se encarga de manejar eventos mediante inputs de GameWindow -> Game
 // Contiene el metodo main
 // Instancia las clases GameController y GameWindow
+
+
+/*
+TODO - 1: Implementar panel de registro y login + SQLite
+ */
 
 public class GameController {
     static char actualPlayer;
@@ -38,6 +45,7 @@ public class GameController {
         GameWindow gameWndw = new GameWindow(); // Instancia de la clase GameWindow - view
         Bot bot = new Bot(game);
         int boardLength = game.getBoardLength();
+
 
         char initialTurn = game.getTurn(); // Default turno para jugador en j vs cpu
         bot.setTurn(initialTurn == 'X' ? 'O' : 'X');
