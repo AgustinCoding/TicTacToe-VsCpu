@@ -1,10 +1,7 @@
 package com.tateti.model;
 
-<<<<<<< HEAD
-
 import java.util.Arrays;
-=======
->>>>>>> 6f7bb2e615ea988c6e82f19d6adda5b51ca27608
+
 import java.util.Random;
 
 public class Game {
@@ -15,10 +12,10 @@ public class Game {
     private final Random rnd = new Random();
     private int boardLength = 0;
     private final char[] players = {'X', 'O'};
-<<<<<<< HEAD
+
     private int moveCounter = 0;
-=======
->>>>>>> 6f7bb2e615ea988c6e82f19d6adda5b51ca27608
+
+
 
     public Game() {
         board = new char[3][3];
@@ -64,10 +61,10 @@ public class Game {
 
         // Change turn if no win or draw
         turn = (turn == players[0]) ? players[1] : players[0];
-<<<<<<< HEAD
+
         moveCounter++;
-=======
->>>>>>> 6f7bb2e615ea988c6e82f19d6adda5b51ca27608
+
+
         return true;
     }
 
@@ -128,13 +125,11 @@ public class Game {
     public char[][] getBoard(){
         return this.board;
     }
-<<<<<<< HEAD
 
     public int getMoveCounter() {return this.moveCounter;}
 
     public String boardToString(){
         return Arrays.deepToString(this.board);
     }
-=======
->>>>>>> 6f7bb2e615ea988c6e82f19d6adda5b51ca27608
+
 }
